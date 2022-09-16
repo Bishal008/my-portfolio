@@ -11,22 +11,20 @@
     <style>
         .h-s{
             display: grid;
-            grid-template-columns: 4fr 8fr;
-            height: 100%;
+            grid-template-columns: 3fr 9fr;
+            height: 768px;
            
-            
         }
         .my-pic{
             border: 8px solid rgb(43, 40, 40);
-            border-radius: 1750px;
-           
-           
+            border-radius: 70px;
+            
         }
         header{
             background-color: black;
             color: whitesmoke;
-            text-align: center;   
-            height: 100%;
+            text-align: center;
+            height: 90%;
         }
         h1{
             font-family: Arial;
@@ -49,14 +47,15 @@
         
         ul{
             list-style: none;
-            margin-left: 30px;
+            margin-left: 2px;
             text-align: left;
             font-size: 20px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            overflow: auto;
         }
         ul li{
-            margin: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            margin-top: 25px;
         }
         li :hover{
             color: blue;
@@ -66,14 +65,18 @@
             font-weight: bold;
             font-family: Arial;
             font-size: 18px;
-            margin-top: 70px;
+            margin-top: 40px;
+        }
+        .my-pic1{
+            background-image: url(./public/images/DSC_0107.JPG);
+            background-size: cover;
         }
     </style>
 </head>
 <body>
 <div class="h-s">
     <header>
-      <img class="my-pic" src="./public/images/DSC_0107.JPG" width="50%" height="25%">
+      <img class="my-pic" src="./public/images/DSC_0107.JPG" width="20%" height="7%">
       <h1>Bishal Mahapatra</h1>
       <div class="icon">
       <span class="bi bi-twitter"></span>
@@ -96,7 +99,9 @@
     </div>
     </header>
     <section>
-      <img  src="./public/images/DSC_0107.JPG" width="100%">
+      <div class="my-pic1">
+
+      </div>
     </section>
 </div>
 </body>
