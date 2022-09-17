@@ -12,28 +12,18 @@
         .h-s{
             display: grid;
             grid-template-columns: 3fr 9fr;
-            height: 768px;
-           
-        }
-        .my-pic{
-            border: 8px solid rgb(43, 40, 40);
-            border-radius: 70px;
+            
             
         }
         header{
             background-color: black;
             color: whitesmoke;
             text-align: center;
-            height: 90%;
-        }
-        h1{
-            font-family: Arial;
-            font-weight: bold;
-            font-size: 30px;
-            margin-top: 0.5cm;
+            height: 98%;
+            
         }
         .icon{
-           margin-top: 20px;
+           margin-top: 30px;
            font-size: 15px;
             
         }
@@ -45,7 +35,7 @@
             margin: 8px;     
         }
         
-        ul{
+        .me1{
             list-style: none;
             margin-left: 2px;
             text-align: left;
@@ -53,9 +43,9 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             overflow: auto;
         }
-        ul li{
-            margin-bottom: 30px;
-            margin-top: 25px;
+        .me1 li{
+            margin-bottom: 40px;
+            margin-top: 20px;
         }
         li :hover{
             color: blue;
@@ -68,41 +58,139 @@
             margin-top: 40px;
         }
         .my-pic1{
-            background-image: url(./public/images/DSC_0107.JPG);
-            background-size: cover;
+            overflow: auto;
+            height: 730px;
+            border: 4px solid black;
+           
+        }
+        .right{
+            overflow: scroll;
+            height: 730px;
+        }
+        h1{
+            margin-top:-25cm;
+            color: white;
+            font-family: SHREE-ENG-0317;
+            margin-left: 80px;
+        }
+        h2{
+            margin-left: 80px;
+            color: whitesmoke;
+            font-family: SHREE-ENG-0317;
+        }
+        .A{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Elephant;
+            width: 80px;
+            border-bottom: 5px solid blue;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .me{
+            display:grid;
+            grid-template-columns:5fr 7fr;
+        }
+        .detials{
+            display: flex;
+            justify-content: space-between;
+        }
+        li{
+            margin-top: 30px;
+            font-weight: bold;
+            
+        }
+        .photo{
+            margin-left: 10px;
+        }
+        .Resume{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Elephant;
+            width: 110px;
+            border-bottom: 5px solid blue;
+            margin-top: 50px;
+            margin-bottom: 40px;
         }
     </style>
 </head>
 <body>
 <div class="h-s">
+    <div class="left">
     <header>
-      <img class="my-pic" src="./public/images/DSC_0107.JPG" width="20%" height="7%">
-      <h1>Bishal Mahapatra</h1>
-      <div class="icon">
-      <span class="bi bi-twitter"></span>
-      <span class="bi bi-facebook"></span>
-      <span class="bi bi-telegram"></span>
-      <span class="bi bi-skype"></span>
-      <span class="bi bi-linkedin"></span>
-    </div>
-    <ul>
-        <li><span class="bi bi-house-fill">Home</span></li>
-        <li><span class="bi bi-person-heart">About</span></li>
-        <li><span class="bi bi-file-earmark-person">Resume</span></li>
+    <ul class="me1">
+        <li><span class="bi bi-house-fill"><a href="#Home"> Home</a></span></li>
+        <li><span class="bi bi-person-heart"><a href="#About"> About</a></span></li>
+        <li><span class="bi bi-file-earmark-person"><a href="#Resume">Resume</a></span></li>
         <li><span class="bi bi-journal-richtext">Portfolio</span></li>
-        <li><span class="bi bi-hdd-rack-fill">Services</span></li>
+        <li><span class="bi bi-hdd-rack-fill">Blogs</span></li>
         <li><span class="bi bi-person-lines-fill">Contact</span></li>
     </ul>
+    <div class="icon">
+        <span class="bi bi-twitter"></span>
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-telegram"></span>
+        <span class="bi bi-skype"></span>
+        <span class="bi bi-linkedin"></span>
+      </div>
     <div class=foot>
         &copy; Copyright iPortfolio
         Designed by BootstrapMade 
     </div>
     </header>
+</div>
+<div class="right">
     <section>
       <div class="my-pic1">
-
+            <img id="Home" src="./public/images/IMG_20220916_175434.jpg" width="100%">
+             <h1>My Self Bishal</h1>
+            <h2> I'm Developer </h2> 
       </div>
+      <div id="About"><div class="A photo">About</div>
+      <div class="me">
+          <img class="photo" src="./public/images/photo.jpeg" width="90%" height="90%">
+        <div><b><font size="6px" color="Blue"> UI/UX Designer & Web Developer.</font></b>
+            <div class="detials">
+       <ul>
+            <li> Birthday:01/11/2001</li>
+             <li>Website:www.example.com</li>
+             <li>Phone:+917978153537</li>
+             <li>City:Odisha,India</li>
+             <li>Hobby:Cricket,Listening music,Traveling to new place</li>
+        </ul>
+        <ul>
+            <li>Age:20</li>
+            <li>Degree:B.sc Computer Science</li>
+            <li>Email-mahapatrasurendra0@gmail.com</li>
+            <li>Freelance:Available</li>
+            <li>Relevant skills:UI/UX web-Developer</li>
+        </ul>
+    </div>
+        </div>
+        <div>
+        <div class="A photo">Skills</div>
+        <div class="detials">
+         <ul class="me1">
+            <li>HTML <span class="bi bi-arrow-right-circle-fill"> 100%</span><progress min="1" max="100" value="100" class="w-100"></progress></li>
+            <li>CSS <span class="bi bi-arrow-right-circle-fill">85%</span><progress min="1" max="100" value="85" class="w-100"></progress></li>
+            <li>Java Script<span class="bi bi-arrow-right-circle-fill">80%</span><progress min="1" max="100" value="80" class="w-100"></progress></li>
+            <li>C++<span class="bi bi-arrow-right-circle-fill">75%</span><progress min="1" max="100" value="75" class="w-100"></progress></li>
+         </ul>
+        </div>
+        </div>
+      </div>
+    <div id="Resume">
+        <div class="Resume photo">Resume</div>
+        <div>
+
+        </div>
+    </div>
     </section>
+</div>
 </div>
 </body>
 </html>
