@@ -116,6 +116,48 @@
             margin-top: 50px;
             margin-bottom: 40px;
         }
+        .blogs{
+            display: flex;
+            justify-content: space-between;
+        }
+        .net{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        p{
+            font-family: Arial;
+            text-align: center;
+            font-size: 20px;
+        }
+        .blog1{
+            text-align: left;
+        }
+        .full{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .adress{
+            margin-left: 20px;
+            margin-bottom: 20px;
+            background-color: whitesmoke;
+            border: 5px solid whitesmoke;
+        }
+        .message{
+            margin-left: 20px;
+            margin-bottom: 20px;
+            background-color: whitesmoke;
+            border: 5px solid whitesmoke;
+        }
+        #About{
+            background-color: whitesmoke;
+        }
+        #Resume{
+            background-color: white;
+        }
+        #Blogs{
+            background-color: whitesmoke;
+        }
     </style>
 </head>
 <body>
@@ -126,9 +168,9 @@
         <li><span class="bi bi-house-fill"><a href="#Home"> Home</a></span></li>
         <li><span class="bi bi-person-heart"><a href="#About"> About</a></span></li>
         <li><span class="bi bi-file-earmark-person"><a href="#Resume">Resume</a></span></li>
-        <li><span class="bi bi-journal-richtext">Portfolio</span></li>
-        <li><span class="bi bi-hdd-rack-fill">Blogs</span></li>
-        <li><span class="bi bi-person-lines-fill">Contact</span></li>
+        <li><span class="bi bi-journal-richtext"><a href="#Blogs">Portfolio</a></span></li>
+        <li><span class="bi bi-hdd-rack-fill"><a href="#Blogs">Blogs</a></span></li>
+        <li><span class="bi bi-person-lines-fill"><a href="#Contact">Contact</a></span></li>
     </ul>
     <div class="icon">
         <span class="bi bi-twitter"></span>
@@ -139,7 +181,7 @@
       </div>
     <div class=foot>
         &copy; Copyright iPortfolio
-        Designed by BootstrapMade 
+        
     </div>
     </header>
 </div>
@@ -186,8 +228,116 @@
     <div id="Resume">
         <div class="Resume photo">Resume</div>
         <div>
-
+            <div class="me">
+                <img class="photo" src="./public/images/WhatsApp Image 2022-09-17 at 8.28.22 PM.jpeg" width="90%" height="90%">
+              <div><b><font size="6px" color="Blue"> UI/UX Designer & Web Developer.</font></b>
+                  <div class="detials">
+             <ul>
+                  <li> Birthday:01/11/2001</li>
+                   <li>Website:www.example.com</li>
+                   <li>Phone:+917978153537</li>
+                   <li>City:Odisha,India</li>
+                   <li>Hobby:Cricket,Listening music,Traveling to new place</li>
+              </ul>
+              <ul>
+                  <li>Age:20</li>
+                  <li>Degree:B.sc Computer Science</li>
+                  <li>Email-mahapatrasurendra0@gmail.com</li>
+                  <li>Freelance:Available</li>
+                  <li>Relevant skills:UI/UX web-Developer</li>
+              </ul>
+          </div>
+              </div>
         </div>
+    </div>
+    <div class="Resume photo">Education</div>
+    <div>
+        <table frame="box" width="60%" rules="all" border="5">
+                <tr align="center">
+                    <th>10th</th>
+                    <th>+2</th>
+                    <th>+3</th>
+                </tr>
+                <tr align="center">
+                    <td>79.00%</td>
+                    <td>50.01%</td>
+                    <td>81.23%</td>
+                </tr>
+        </table>
+        </div>
+        <div class="Resume photo">Details</div>
+        <div>
+       <div class="Resume photo"> 10th</div> <p class="blog1"> I am passout 10th at the Board secondary Education(BSE),Odisha</p>
+       <p class="blog1"> INSTITUE NAME- Saraswati sisu vidya mandir,nayagarh,odisha.</p></p></span>
+    </div>
+    <div>
+    <div class="Resume photo">+2</div>
+       <p class="blog1">I am passout +2 at Higher Secondary Councile Board(HSC),odisha</p>
+       <p class="blog1">INSTITUE NAME-Itamati Higher secondary Education and Tenchology</p>
+    </div>
+    <div>
+        <div class="Resume photo">+3</div>
+        <p class="blog1">I am passout +2 at Nayagarh Autonoumous Collage,nayagarh,odisha</p>
+        <p class="blog1">INSTITUE NAME-Nayagarh Autonoumous Collage,nayagarh,odisha</p>
+    </div>
+
+    </div>
+    </div>
+    <div id="Blogs">
+        <div class="Resume photo">Blogs</div>
+        <div>
+            <P class="blog1">The above project done by using Html5 Css3 and use of java-script,is this the sample of the project done by me,if you want to done your project by me,then give me your project.i will complete your project at the correct time with the use of html,css,javascript and other needed language .in bellow i show you my work see it. </P>
+            <p class="blog1">if you statisfy with my work then contact me on Email=mahapatrasurendra0@gmail.com</p>
+        </div>
+        <div class="blogs">
+            <div>
+          <img class="net" src="./public/images/Netflix.png" width="100%">
+          <p>The netflix page</p>
+        </div>
+        <div>
+          <img class="net" src="./public/images/insta9.png" width="100%">
+          <p>Intsa log-in page</p>
+        </div>
+        <div>
+          <img class="net" src="./public/images/1.png" width="100%">
+          <p>Naresh i tenchplogy web page</p>
+        </div>
+        </div>
+    </div>
+    <div id="Contact" >
+        <div class="Resume photo">Contact</div>
+        <div class="full">
+        <div class="adress">
+          <ul>
+           <li> <span class="bi bi-geo-alt-fill">Location: Odisha,India</span></li>
+         <li> <span class="bi bi-envelope">Email:mahapatrasurendra0@gmail.com</span></li>
+         <li> <span class="bi bi-phone-fill"> NO:+917978153537</span></li>
+         <li><span class="bi bi-telegram">Telegram:@Bishal0001</span></li>
+         <img src="./public/images/quotes.jpg" width="60%" height="12%">
+          </ul>
+        </div>
+        <div class="message">
+            <div>
+          <label for="user" class="form-label">Your name</label>
+          <input type="text" placeholder="your name" class="form-control" name="user">
+        </div>
+        <div>
+          <label for="user" class="form-label">Your email</label>
+          <input type="Email" placeholder="Your Email" class="form-control" name="user">
+        </div>
+        <div>
+            <label for="user" class="form-label">Subject</label>
+            <input type="text" placeholder="Your data" class="form-control" name="user">
+        </div>
+        <div>
+            <label for="user" class="form-label">Message</label>
+            <textarea name="data" id="data" cols="52" rows="10"></textarea>
+        </div>
+        <div>
+           
+            <button class="btn btn-primary w-100" class="form-control" name="user">Send message</button>
+        </div>
+    </div>
     </div>
     </section>
 </div>
